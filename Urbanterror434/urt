@@ -1,0 +1,21 @@
+#!/bin/sh
+
+## Set the example server config if not exist
+if [ ! -f /server/q3ut4/server.cfg ]
+then
+	echo 'Config file not found, copy the default one...'
+	cp /UrbanTerror43/q3ut4/server_example.cfg /server/q3ut4/server.cfg
+else
+	echo 'Config file found :D'
+fi
+
+
+## run the UrT server
+echo "===== Starting UrT server ======"
+exec /UrbanTerror43/titan-ded.x86_64 \
+	+set fs_game q3ut4 \
+	+set fs_homepath /server/ \
+	+set dedicated 2 \
+	+set net_port 27960 \
+	+exec server.cfg \
+	+set com_hunkmegs 128
