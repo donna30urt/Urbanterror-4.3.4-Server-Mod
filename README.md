@@ -18,4 +18,4 @@ feel free to use it for making your own server however please give credits to me
 
 ## This code will most likely cause bugs, crashes and other issues, use at own risk
 
-The is based on the base of pedroxd and th3k1ll3r
+The mod is based on the code of pedroxd and th3k1ll3r
